@@ -3,25 +3,79 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>About Zhang</title>
+    <title>About</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="workshop.html">Workshop</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
         <section>
-            <img src="path_to_your_image.jpg" alt="Zhang's Image">
-            <p>Short description about me...</p>
+            <p>I'm a fourth-year student <em>@ UC San Diego</em> where I major in Cognitive Science with Design & Interaction and minor in Computer Science and Film Studies.</p>
+            
             <h2>Skills</h2>
             <ul>
-                <li>Skill 1</li>
-                <li>Skill 2</li>
-                <li>Skill 3</li>
+                <li><strong>Programming</strong>: Python, Java, C++, C, ReactJS, HTML, CSS, JavaScript...</li>
+                <li><strong>Tools</strong>: Figma, Visual Studio Code, Sketch, Miro, Dovetail, Procreate, Adobe XD...</li>
+                <li><strong>UI/UX Design & Research</strong>: Interaction design, user research, user flows, usability tests, A/B testing, wireframing, low and high-fidelity prototyping…</li>
             </ul>
-            <h2>Experience Timeline</h2>
-            <p>Timeline of experiences here...</p>
+
+            <table>
+                <caption><h3>Languages</h3></caption>
+                <colgroup>
+                    <col span="2">
+                </colgroup>
+                <tr>
+                    <th>Language</th>
+                    <th>Proficiency</th>
+                </tr>
+                <tr>
+                    <td>Mandarin</td>
+                    <td>Native</td>
+                </tr>
+                <tr>
+                    <td>Korean</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>Spanish</td>
+                    <td>Intermediate</td>
+                </tr>
+            </table>
+
+            <h2>Relevant Coursework</h2>
+            <p>Data Structures and Object-Oriented Design; Software Tools and Techniques Laboratory; Mathematics for Algorithms and Systems; Computer Organization and Systems Programming; Advanced Data Structures; Web Client Languages; Teaching Computational Thinking…</p>
+            
+            <h2>My UI/UX Portfolio:</h2>
+            <iframe src="https://joannaz.me" title="My UI/UX Portfolio" width="1280" height=700></iframe>
+           
+            <aside>
+                <picture>
+                    <source media="(min-width:60rem)" srcset="./media/picture_me.jpeg">
+                    <source media="(min-width:30rem)" srcset="./media/picture_me.jpeg">
+                    <img src="./media/picture_me.jpeg" alt="Picture of me">
+                </picture>
+            </aside>
+            
         </section>
     </main>
+
+    <footer>
+        <hr>
+        <p>Made by Yizhuo Zhang 2023</p>
+    </footer>
+
 </body>
 
 </html>

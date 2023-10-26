@@ -3,28 +3,72 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Contact Zhang</title>
+    <title>Contact</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="workshop.html">Workshop</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
         <section>
-            <a href="link_to_linkedin">Linkedin</a>
+            <a href="https://www.linkedin.com/in/joanna-zhang-a76944254">Linkedin</a>
             <br>
-            <a href="mailto:your_email@example.com">Email</a>
+            <a href="mailto:yiz032@ucsd.edu">Email</a>
             <br>
+
+            <h3>I'd love to hear from you!</h3>
             <form>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br>
-                <label for="email">Email:</label><br>
-                <input type="text" id="email" name="email"><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message"></textarea><br><br>
-                <button type="submit">Submit</button>
+                <fieldset>
+                    <legend><i>Send me a message here</i></legend>
+
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email"><br>
+
+                    <label for="pronouns">What are your pronouns?</label>
+                    <select name="pronouns" id="pronouns">
+                        <option value="she/her">she/her</option>
+                        <option value="he/him">he/him</option>
+                        <option value="they/them">they/them</option>
+                        <option value="anything">anything!</option>
+                    </select>
+                    <br>
+                    
+                    <label for="browsers">What is your current browser?</label>
+                    <input list="browsers" name="browser" id="browser">
+                    <datalist id="browsers">
+                        <option value="Chrome">
+                        <option value="Safari">
+                        <option value="Firefox">
+                        <option value="Edge">
+                    </datalist>
+                    <br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message"></textarea><br><br>
+                    <button type="submit">Submit</button>
+                </fieldset>
             </form>
         </section>
     </main>
+
+    <footer>
+        <hr>
+        <p>Made by Yizhuo Zhang 2023</p>
+    </footer>
 </body>
 
 </html>
