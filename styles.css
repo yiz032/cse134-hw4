@@ -9,7 +9,7 @@
 }
 
 * {
-    background-color: var(--main-color);
+    background-color: var(--main-color, white);
 }
   
 header {
@@ -46,9 +46,9 @@ nav ul li a {
 }
     
 nav ul li a:hover {
-    background-color: var(--nav-hover-color);
+    background-color: var(--nav-hover-color, orange);
     color: #149c8a;
-    border: 0.15rem solid var(--nav-hover-color);
+    border: 0.15rem solid var(--nav-hover-color, orange);
     transition: 0.3s ease;
 }
 
@@ -110,16 +110,27 @@ section.intro picture {
 
 section.intro picture img {
     max-width: 100%;
-    border: 0.25rem solid #149c8a;
-    border-radius: 0.5rem;
+    border: 0.35rem solid #149c8a;
+    border-radius: 1rem;
+    animation-name: colorchange;
+    animation-duration: 4s; 
+}
+
+@keyframes colorchange {
+    from {border-color: #149c8a;}
+    to {border-color: #ff7f50;}
+}
+
+section.intro picture img:hover { 
+    transform: skewX(20deg);
 }
 
 /* Contacts Form */
 section a {
     display: inline-block;
-    text-decoration: none;
     color: #149c8a;
-    background-color: var(--main-color);
+    color: color(display-p3 0.2 0.5 0);
+    background-color: var(--main-color,white);
     padding: 0.5rem 1rem;
     margin: 0.5rem;
     border: 0.15rem solid #149c8a;
@@ -177,7 +188,7 @@ section form button {
 }
 
 section a:hover, section form button:hover {
-    background-color: var(--nav-hover-color);
+    background-color: var(--nav-hover-color, orange);
     transition: 0.3s ease;
 }
 
