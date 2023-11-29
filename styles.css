@@ -5,11 +5,15 @@
 :root {
     --font:'Open Sans', sans-serif;
     --main-color: #FDF8F3;
+    --text-color: #1a1a1a; 
     --nav-hover-color: #ff7f50;
+    --bg-color-dark: #1c1c1e; 
+    --text-color-dark: #f7fffe; 
 }
 
 * {
     background-color: var(--main-color, white);
+    color: var(--text-color, black);
 }
   
 header {
@@ -21,6 +25,7 @@ body {
     font-family: var(--font);
     height: 100%;
 }
+
 
 footer {
     text-align: center;
@@ -192,6 +197,17 @@ section a:hover, section form button:hover {
     transition: 0.3s ease;
 }
 
+.error-output {
+    color: red;
+    margin-top: 4px;
+}
+
+.info-output {
+    color: green;
+    margin-top: 4px;
+}
+
+
 /* About Table */
 section table {
     width: 100%;
@@ -215,15 +231,13 @@ section table th {
     font-weight: bold;
 }
 
-
-
 /* Media Queries */
 /* Phone */
 @media screen and (max-width: 480px) {
     nav {
         position: absolute;
         top: 1rem;
-        right: 1rem;
+        right: 5rem;
     }
 }
   
@@ -232,7 +246,7 @@ section table th {
     nav {
         position: absolute;
         top: 1rem;
-        right: 1rem;
+        right: 5rem;
     }
 }
   
@@ -241,7 +255,7 @@ section table th {
     nav {
         position: absolute;
         top: 1rem;
-        right: 1rem;
+        right: 5rem;
     }
 }
 
