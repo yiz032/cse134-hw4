@@ -7,14 +7,12 @@
     --main-color: #FDF8F3;
     --text-color: #1a1a1a; 
     --nav-hover-color: #ff7f50;
-    --bg-color-dark: #1c1c1e; 
-    --text-color-dark: #f7fffe; 
+    --bg-color-light: var(--main-color);
+    --text-color-light: var(--text-color);
+    --bg-color-dark: #1c1c1e;
+    --text-color-dark: #f7fffe;
 }
 
-* {
-    background-color: var(--main-color, white);
-    color: var(--text-color, black);
-}
   
 header {
     width: 100%;
@@ -24,6 +22,8 @@ body {
     font-size: 1.2rem;
     font-family: var(--font);
     height: 100%;
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
 }
 
 body.dark-mode {
