@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         body.classList.add(currentTheme);
     }
 
-    themeToggle.addEventListener('change', function() {
+    themeToggle.addEventListener('change', function toggleTheme() {
         body.classList.toggle('dark-mode');
         const isDarkMode = body.classList.contains('dark-mode');
 
