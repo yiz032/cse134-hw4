@@ -77,10 +77,6 @@ p {
     margin-bottom: 1.5rem;
 }
 
-p:has(span) {
-    font-weight: bold;
-}
-
 main { 
     display: flex;
     flex-direction: column;
@@ -139,7 +135,6 @@ section.intro picture img:hover {
 section a {
     display: inline-block;
     color: #149c8a;
-    color: color(display-p3 0.2 0.5 0);
     background-color: var(--main-color,white);
     padding: 0.5rem 1rem;
     margin: 0.5rem;
