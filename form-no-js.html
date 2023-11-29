@@ -31,7 +31,7 @@
                 <br>
             </div>
 
-            <form action="https://httpbin.org/post" method="post">
+            <form action="https://httpbin.org/post" method="post" id="contactForm">
                 <fieldset>
                     <legend><i>Send me a message here</i></legend>
 
@@ -46,7 +46,7 @@
                     <output class="info-output" id="email-info"></output>
 
                     <label for="comments">Comments:</label>
-                    <textarea id="comments" name="comments" required></textarea><br><br>
+                    <textarea id="comments"  name="comments" maxlength="250" pattern="[A-Za-z0-9 !.?$%]+" required></textarea>                
                     <output class="error-output" id="comments-error"></output>
                     <output class="info-output" id="comments-info"></output>
 

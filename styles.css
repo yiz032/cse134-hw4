@@ -26,6 +26,11 @@ body {
     height: 100%;
 }
 
+body.dark-mode {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+}
+
 
 footer {
     text-align: center;
@@ -207,6 +212,13 @@ section a:hover, section form button:hover {
     margin-top: 4px;
 }
 
+.warn-style {
+    color: orange;
+}
+
+.error-style {
+    color: red;
+}
 
 /* About Table */
 section table {
@@ -229,6 +241,50 @@ section table th, section table td {
 section table th {
     background-color: #f2f2f2;
     font-weight: bold;
+}
+
+/* Theme Switcher */
+.switch {
+    position: fixed;
+    top: 2rem;
+    right: 10px;
+    display: inline-block;
+    height: 34px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    background-color:#ddd;
+    border-radius: 34px;
+    cursor: pointer;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+    background-color: black;
+}
+
+input:checked + .slider {
+    background-color: #149c8a;
 }
 
 /* Media Queries */
